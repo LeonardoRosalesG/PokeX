@@ -1,0 +1,242 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    /* border: solid 1px black; */
+}
+body{
+    margin: 0;
+}
+
+/******************* Pokeball banners ***********************/
+#headerPokedex{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+}
+
+#redPokeball{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: rgb(240,0,0);
+    height: 100px;
+    width: 100%;
+}
+
+#blackBorder{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: rgb(34,34,36);
+    height: 30px;
+    width: 100%;
+}
+#blackCircle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: rgb(34,34,36);
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#whiteCircleExt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: rgb(240,240,240);
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+#whiteCircleInt{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: rgb(240,240,240);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 3px solid rgb(34,34,36);
+    /* animation: blinking 0.7s infinite;  */
+}
+
+#whiteCircleInt:hover{
+    background-color: #C4C4C4;
+}
+
+#footerPokedex{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+}
+
+#whitePokeball{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: rgb(240,240,240);
+    height: 95px;
+    width: 100%;
+}
+#blackHalfCircle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: rgb(34,34,36);
+    height: 50px;
+    width: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    left: 0;
+    right: 0;
+    bottom:45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/******************* Pokeball banners ***********************/
+
+
+/******************* Search section ***********************/
+#searchSection{
+    display: flex;
+    justify-content: start;
+    margin-top: 150px;
+    row-gap: 15px;
+}
+
+#searchDiv{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+#searchInput{
+    text-align: center;
+}
+
+/******************* Search section ***********************/
+
+/******************* Information section ***********************/
+
+#generalInfoSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#nameSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#imgDiv{
+    display: flex;
+    justify-content: start;
+}
+#pokemonImage{
+    width: 230px;
+    height: 230px;
+}
+
+#massInfo{
+    visibility: hidden;
+}
+
+#typeSection{
+    display: flex;
+    justify-content: center;
+}
+.typeIcon{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+#pokemonTypeDiv{
+    display: flex;
+    justify-content: start;
+}
+
+#heightInfo{
+    font-weight: bold;
+}
+#weightInfo{
+    font-weight: bold;
+}
+
+#movesSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#movesSection>h3{
+    font-size: 35px;
+}
+.movesTable{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 35px 10px;
+    margin-bottom: 100px;
+}
+
+
+/***************General purpose**********************/
+
+@media screen and (max-width: 800px) and (min-width: 300px){  
+    body{
+        background-color: aqua;
+    }
+    #searchSection{
+        margin-top: 0;
+    }
+    #generalInfoSection{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: blueviolet;
+    }
+    #headerPokedex, #footerPokedex{
+        visibility: hidden;
+    }
+
+}  
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+
+@keyframes blinking {
+    0% {
+        background-color: rgb(238,21,21);
+      }
+      100% {
+        background-color: rgb(240,240,240);
+      }
+}

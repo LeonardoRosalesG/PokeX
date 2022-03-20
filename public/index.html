@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/pokedex.css">
+    <script src="./scripts/pokedex.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header id="headerPokedex">
+        <div id="redPokeball">
+            
+        </div>
+        <div id="blackCircle">
+            <div id="whiteCircleExt">
+                <div id="whiteCircleInt" onclick="fetchPokemon()">
+            
+                </div>
+            </div>
+        </div>
+        <div id="blackBorder">
+            
+        </div>
+    </header>
+    
+    <section id="searchSection">
+        <article>
+            <div id="searchDiv">
+                <label for="searchInput">Buscar Pokémon:</label>
+                <input id="searchInput" type="text" placeholder="Ingresa el nombre de un Pokémon">
+                <input id="searchButton" onclick="fetchPokemon()" type="button" value="Buscar">
+            </div>
+        </article>
+    </section>
+    <section id="generalInfoSection">
+        <section id="nameSection">
+            <section id="imgSection">
+                <div id="imgDiv">
+                    <img id="pokemonImage" src="./assets/no_pokemon.png" alt="no pokemon searched" height="100px">
+                </div>
+            </section>
+            <div>
+                <h2 id="pokemonName">Unknown</h2>
+            </div>
+            <!-- <section id="typeSection">
+                <div id="pokemonTypeDiv">
+        
+                </div>
+                <div id="pokemonWeakness">
+        
+                </div>
+                <div id="pokemonStrength"> 
+        
+                </div>
+            </section> -->
+        </section>  
+        <section id="typeSection">
+            <div>
+                <h3>Type(s): </h3>
+                <div id="pokemonTypeDiv">
+    
+                </div>
+            </div>
+            
+            <div id="pokemonWeakness">
+    
+            </div>
+            <div id="pokemonStrength"> 
+    
+            </div>
+        </section>
+        <div id="massInfo">
+            <p id="heightInfo">Height: </p>
+            <p id="weightInfo">Weight: </p>
+        </div>
+        <section id="statsSection">
+            <div id="statsDiv">
+            </div>
+        </section>
+    </section>
+    
+    
+    
+    <section id="movesSection">
+        <h3>Moves</h3>
+        <div id="movesDiv">
+        </div>
+    </section>
+    <footer id="footerPokedex">
+        <div id="whitePokeball">
+            <div id="blackHalfCircle">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
