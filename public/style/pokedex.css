@@ -206,9 +206,6 @@ body{
 /***************General purpose**********************/
 
 @media screen and (max-width: 800px) and (min-width: 300px){  
-    body{
-        background-color: aqua;
-    }
     #searchSection{
         margin-top: 0;
     }
@@ -217,7 +214,6 @@ body{
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
-        background-color: blueviolet;
     }
     #headerPokedex, #footerPokedex{
         visibility: hidden;
