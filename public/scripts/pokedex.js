@@ -17,7 +17,7 @@ function fetchPokemon() {
             if(data){
                 console.log(data);
                 setPokemonGeneralInfo(data.id, data.name, data.weight, data.height);
-                setPokemonImage(data.sprites.front_shiny);
+                setPokemonImage(data.sprites.front_default);
                 setPokemonType(data.types);
                 setPokemonStats(data.stats);
                 setPokemonMoves(data.moves);
